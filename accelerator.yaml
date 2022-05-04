@@ -11,7 +11,7 @@ accelerator:
   options:
     - name: audience
       label: Application audience
-      input type: checkbox
+      inputType: checkbox
       dataType: [string]
       display: true
       required: true
