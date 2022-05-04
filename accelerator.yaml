@@ -18,8 +18,7 @@ accelerator:
       defaultValue: 
         - "Internal"
       choices:
-        - text: Internal
-          description: VPN required
+        - text: Internal - VPN required
           value: "Internal"
         - text: Dealer - Includes Vehicle Incentive APIs
           value: "dealer"
