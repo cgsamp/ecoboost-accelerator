@@ -11,11 +11,12 @@ accelerator:
   options:
     - name: audience
       label: Application audience
-      input type: radio
+      input type: checkbox
       dataType: string
       display: true
       required: true
-      defaultValue: "Internal"
+      defaultValue: 
+        - "Internal"
       choices:
         - text: Internal
           description: VPN required
