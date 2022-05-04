@@ -1,13 +1,35 @@
 accelerator:
   displayName: EcoBoost Accelerator
-  description: Ford Web Application Starter
+  description: Ford "EcoBoost" Web Application Starter provides a curated set of APIs, frameworks and deployment topologies to quickly create a cloud-native microservice-based web application. It can be targeted to Ford employees, Ford dealers, Ford vehicle owners or prospective Ford customers..
   iconUrl: https://raw.githubusercontent.com/cgsamp/ecoboost-accelerator/main/img/logo.png
   tags:
     - Spring
     - Web
     - React
     - API
+    - ford
   options:
+    - name: audience
+      label: Application audience
+      input type: radio
+      dataType: string
+      display: true
+      required: true
+      defaultValue: "Internal"
+      choices:
+        - text: Internal
+          description: VPN required
+          value: "Internal"
+        - text: Dealer
+          description: Includes Vehicle Incentive APIs
+          value: "dealer"
+        - text: Vehicle Owner
+          description: Connection to VIN data included
+          value: owner
+        - text: Prospective Customer
+          description: Marketing assets and language review workflow
+          value: prospect
+        
     - name: databaseType
       label: Database Type
       inputType: select
