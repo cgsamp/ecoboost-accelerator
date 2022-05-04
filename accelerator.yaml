@@ -18,17 +18,13 @@ accelerator:
       defaultValue: 
         - "Internal"
       choices:
-        - text: Internal
-          description: VPN required
+        - text: Internal - VPN required
           value: "Internal"
-        - text: Dealer
-          description: Includes Vehicle Incentive APIs
+        - text: Dealer - Includes Vehicle Incentive APIs
           value: "dealer"
-        - text: Vehicle Owner
-          description: Connection to VIN data included
+        - text: Vehicle Owner - Connection to VIN data included
           value: owner
-        - text: Prospective Customer
-          description: Marketing assets and language review workflow
+        - text: Prospective Customer - Marketing assets and language review workflow
           value: prospect
         
     - name: databaseType
