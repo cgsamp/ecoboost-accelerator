@@ -27,6 +27,24 @@ accelerator:
         - text: Prospective Customer - Marketing assets and language review workflow
           value: prospect
         
+    - name: deployment-target
+      label: Deployment Target
+      inputType: checkbox
+      dataType: [string]
+      display: true
+      required: true
+      defaultValue: 
+        - "gcr"
+      choices:
+        - text: PCF / Tanzu Application Service
+          value: "pcf"
+        - text: Ford OpenShift CaaS
+          value: "openshift"
+        - text: Google Cloud Run
+          value: gcr
+        - text: Google Kubernetes Engine
+          value: gke
+        
     - name: databaseType
       label: Database Type
       inputType: select
